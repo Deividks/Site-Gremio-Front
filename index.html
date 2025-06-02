@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="zdp.css" />
+  <title>Grêmio ZDP</title>
+</head>
+<body>
+  <header>
+    <nav class="menu">
+      <div class="logo">
+        <img src="imgs/logosf.png" alt="Logo Grêmio ZDP" />
+      </div>
+      <ul class="menu-links">
+        <li><a href="#">Início</a></li>
+        <li><a href="#quem-somos">Quem Somos</a></li>
+        <li><a href="#projetos">Notícias</a></li>
+        <li><a href="#ouvidoria">Ouvidoria</a></li>
+      </ul>
+      <div class="menu-button">
+        <a href="pagina2.html" class="btn-entrar">Entrar</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero-zdp">
+    <div class="texto-zdp">
+      <h1>
+        Bem-vindo ao<br>
+        <strong>Grêmio Estudantil ZDP</strong>
+      </h1>
+      <p>Unindo vozes, construindo o futuro</p>
+    </div>
+    <img src="imgs/imgsf2.png" alt="Alunos sorrindo" class="imagem-zdp">
+  </section>
+
+
+<br>
+  <section class="noticia" id="projetos">
+    <h2 class="noticia">Notícias</h2> 
+    <div class="carousel-container">
+      <div class="carousel-fade">
+        <img src="imgs/pode-não.png" alt="Foto 1" class="slide active">
+        <img src="imgs/transferir.jpg" alt="Foto 2" class="slide">
+        <img src="imgs/pode-não.png" alt="Foto 3" class="slide">
+      </div>
+  
+      <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+  
+      <button id="pauseBtn">⏸️</button>
+    </div>
+  </section>
+<br>
+
+
+<section class="quem-somos" id="quem-somos">
+  <div class="conteudo">
+    <div class="texto">
+      <h2>Quem Somos Nós</h2>
+      <p>
+        Acreditamos que é possível crescer com propósito. Nossa equipe é formada por pessoas apaixonadas por inovação e compromisso com resultados. Trabalhamos todos os dias para criar soluções que geram valor real, transformando ideias em impacto.
+        <br><br>
+        Unimos tecnologia, criatividade e empatia para ajudar empresas a evoluírem com consciência, responsabilidade e sucesso duradouro.
+      </p>
+    </div>
+    <div class="imagem">
+      <img src="imgs/quemsomos.jpeg" alt="Equipe reunida">
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <section class="ouvidoria" id="ouvidoria">
+    <h2>Ouvidoria</h2>
+    
+      <div class="input-group">
+        <input id="input-nome" type="text" placeholder="Nome (opcional)" />
+        <input id="input-email" type="email" placeholder="E-mail (opcional)" />
+      </div>
+
+      <label for="tipo">Tipo de mensagem:</label>
+      <select id="input-tipo" name="tipo">
+        <option value="mensagem">Mensagem</option>
+        <option value="reclamacao">Reclamação</option>
+        <option value="elogio">Elogio</option>
+        <option value="sugestao">Sugestão</option>
+      </select>
+
+      <label for="diretorias">Escolha uma diretoria P/ Direcionar Sua Mensgem:</label>
+      <select name="diretorias" id="input-diretorias">
+        <option value="">Selecione uma Diretoria</option>
+        <option value="presidencia">Presidência</option>
+        <option value="vice-presidencia">Vice-Presidência</option>
+        <option value="secretaria-geral">Secretaria Geral</option>
+        <option value="patrimonio-financas">Secretaria de Patrimônios e Finanças</option>
+        <option value="comunicacao-social">Diretoria de Comunicação Social</option>
+        <option value="arte-cultura">Diretoria de Arte e Cultura</option>
+        <option value="esportes">Diretoria de Esportes</option>
+        <option value="social-eventos">Diretoria Social e de Eventos</option>
+        <option value="assistencia-estudantil">Diretoria de Assistência Estudantil</option>
+        <option value="diversidade">Diretoria da Diversidade</option>
+        <option value="negritude">Diretoria de Negritude</option>
+        <option value="mulheres">Diretoria de Mulheres</option>
+      </select>
+
+      <div class="input-group">
+        <input id="input-mensagem" type="text" placeholder="Escreva sua mensagem" />
+      </div>
+
+      <button id="btnAdd" class="button" type="submit">Enviar</button>
+    
+  </section>
+</section>
+<footer>
+  &copy; GRÊMIO ESTUDANTIL ZDP
+</footer>
+</body>
+<script type="module" src="zdp.js"></script>
+</html>
