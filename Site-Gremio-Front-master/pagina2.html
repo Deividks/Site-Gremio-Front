@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Painel de Imagens e Dados</title>
+    <link rel="stylesheet" href="styleP2.css" />
+  </head>
+  <body>
+    <section id="alimentacao" class="inativa">
+      <div class="voltar">
+        <a href="index.html">Voltar</a>
+      </div>
+      <h1>Painel de Dados</h1>
+
+      <div class="container">
+        <!-- Coluna da Direita: Tabela -->
+        <div class="coluna">
+          <h2>Tabela de Dados</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>T. mens</th>
+                <th>Direção Mens.</th>
+                <th>Mensagem</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="loguin" class="ativa">
+      <div class="login-container">
+        <h2>Login</h2>
+        <input
+          id="input-loguin"
+          type="text"
+          name="usuario"
+          placeholder="Usuário"
+          required
+        />
+        <input
+          id="input-senha"
+          type="password"
+          name="senha"
+          placeholder="Senha"
+          required
+        />
+        <button type="submit" id="btEntrar">Entrar</button>
+      </div>
+    </section>
+  </body>
+  <script type="module" src="scriptP2.js"></script>
+</html>
