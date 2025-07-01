@@ -1,6 +1,6 @@
 class ApiConection{
 
-    url = "http://localhost:8888/ouvidoria"
+    url = "https://site-gremio-back.onrender.com/ouvidoria"
 
     async listar(){
     const response =  await fetch(this.url)
@@ -17,7 +17,6 @@ class ApiConection{
         body: JSON.stringify(produto),
         headers: {"Content-Type": "application/json"}
     });
-    
     }
 
     async deletar(id) {
