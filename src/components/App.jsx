@@ -18,7 +18,6 @@ function App() {
 
   const alternarTema = () => setTema(tema === 'light' ? 'dark' : 'light');
 
-  // Fecha o menu ao clicar em um link (mobile)
   const handleMenuClick = () => setMenuAberto(false);
 
   function enviarMensagem(event) {
@@ -79,15 +78,19 @@ function App() {
         <div className="imagens-especialidades">
           <div className="especialidade-item">
             <img src="/imagens/logo-html5.png" alt="HTML5" title="HTML5" />
+            <h3 className="nome-tec">HTML5</h3>
           </div>
           <div className="especialidade-item">
             <img src="/imagens/logo-css3.webp" alt="CSS3" title="CSS3" />
+            <h3 className="nome-tec">CSS3</h3>
           </div>
           <div className="especialidade-item">
             <img src="/imagens/logo-js.webp" alt="JavaScript" title="JavaScript" />
+            <h3 className="nome-tec">JavaScript</h3>
           </div>
           <div className="especialidade-item">
             <img src="/imagens/logo-react.png" alt="React" title="React" />
+            <h3 className="nome-tec">React</h3>
           </div>
         </div>
       </section>
@@ -98,20 +101,30 @@ function App() {
           <div className="projetos-card">
             <img className="projetos-imagens" src="/imagens/zvideos.png" alt="Z-videos Lanches" style={{ width: '320px', height: '220px', objectFit: 'cover' }} />
             <div className="caixa-texto-projetos">
-              <h3>Z-videos Lanches</h3>
+              <h3 className="projeto-titulo">Z-videos Lanches</h3>
               <p className="paragrafo-projetos">
                 Loja virtual de lanches completa e com WhatsApp direto para melhorar o atendimento ao usuário!
               </p>
+              <div className="tecnologias-projeto">
+                <span className="tag-tec">React</span>
+                <span className="tag-tec">CSS3</span>
+                <span className="tag-tec">JavaScript</span>
+              </div>
               <a className="Link-projeto" href="https://z-videos-lanches.vercel.app/" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
             </div>
           </div>
           <div className="projetos-card">
             <img className="projetos-imagens" src="/imagens/eduresumos.png" alt="EduResumos" style={{ width: '320px', height: '220px', objectFit: 'cover' }} />
             <div className="caixa-texto-projetos">
-              <h3>EduResumos</h3>
+              <h3 className="projeto-titulo">EduResumos</h3>
               <p className="paragrafo-projetos">
                 Ferramenta para estudantes criarem resumos automáticos, organizar rotina semanal e gerenciar metas.
               </p>
+              <div className="tecnologias-projeto">
+                <span className="tag-tec">React</span>
+                <span className="tag-tec">CSS3</span>
+                <span className="tag-tec">JavaScript</span>
+              </div>
               <a className="Link-projeto" href="https://edu-resumos.vercel.app/" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
             </div>
           </div>
@@ -154,7 +167,17 @@ function App() {
       </section>
 
       <footer>
-        <span>© 2024 Artur Silva</span>
+        <div className="footer-content">
+          <span>© 2024 Artur Silva</span>
+          <div className="social-links">
+            <a href="https://github.com/Silvz67" target="_blank" rel="noopener noreferrer" className="social-link">
+              <img src="/imagens/icon-git.png" alt="GitHub" />
+            </a>
+            <a href="https://wa.me/5582996117038" target="_blank" rel="noopener noreferrer" className="social-link">
+              📱
+            </a>
+          </div>
+        </div>
       </footer>
     </>
   );
